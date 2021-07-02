@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application.csproj", "{76FCE042-9D5B-4BF5-B7C2-009A2B40C111}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnykTask", "..\SnykTask\SnykTask.csproj", "{837E0686-599B-4FC4-8CDF-2A6799A872FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76FCE042-9D5B-4BF5-B7C2-009A2B40C111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76FCE042-9D5B-4BF5-B7C2-009A2B40C111}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76FCE042-9D5B-4BF5-B7C2-009A2B40C111}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76FCE042-9D5B-4BF5-B7C2-009A2B40C111}.Release|Any CPU.Build.0 = Release|Any CPU
+		{837E0686-599B-4FC4-8CDF-2A6799A872FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{837E0686-599B-4FC4-8CDF-2A6799A872FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{837E0686-599B-4FC4-8CDF-2A6799A872FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{837E0686-599B-4FC4-8CDF-2A6799A872FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C616D12-8DE8-4F69-985B-1DA316F8EAFB}
+	EndGlobalSection
+EndGlobal
