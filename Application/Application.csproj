@@ -13,11 +13,9 @@
 
   <UsingTask TaskName="SnykTask.SnykTaskFile" AssemblyFile="$(OutDir)SnykTask.dll" />
 
-  <!--<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <SnykTaskFile />
-  </Target>-->
+  
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <SnykTaskFile />
+    <SnykTaskFile Location="$(ProjectPath)" />
   </Target>
 
 
