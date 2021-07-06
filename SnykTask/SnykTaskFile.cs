@@ -8,10 +8,16 @@ namespace SnykTask
     {
         public override bool Execute()
         {
-            var processInfo = new ProcessStartInfo();
-            processInfo.FileName = "cmd";
-            processInfo.WorkingDirectory = Location;
-            Process.Start(processInfo);
+            //var processInfo = new ProcessStartInfo();
+            //processInfo.FileName = "cmd";
+            //processInfo.WorkingDirectory = Location;
+            //Process.Start(processInfo);
+
+
+            //if (Location.Contains("Appliction"))
+            //{
+            //    return false;
+            //}
 
             return true;
         }
