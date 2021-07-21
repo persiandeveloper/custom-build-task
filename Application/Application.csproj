@@ -8,7 +8,7 @@
   <UsingTask TaskName="SnykTaskFile" AssemblyFile="$(OutDir)SnykTask.dll" />
 
 
-  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+  <Target Name="MyStep" BeforeTargets="CopyFilesToOutputDirectory">
     <SnykTaskFile Location="$(ProjectDir)" />
   </Target>
 
