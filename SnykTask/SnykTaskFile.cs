@@ -1,4 +1,5 @@
 ﻿using Microsoft.Build.Utilities;
+using Newtonsoft.Json;
 using System;
 using System.Diagnostics;
 using System.Text.Json;
@@ -18,14 +19,6 @@ namespace SnykTask
             var a = Process.Start(processInfo);
 
             a.StandardInput.WriteLine("exit");
-
-
-            //if (Location.Contains("Appliction"))
-            //{
-            //    return false;
-            //}
-
-            var obj = JsonSerializer.Deserialize<Root>("{ \"Name\" : \"test\"}");
 
             return true;
         }
