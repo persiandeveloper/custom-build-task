@@ -1,8 +1,6 @@
 ﻿using Microsoft.Build.Utilities;
-using Newtonsoft.Json;
 using System;
 using System.Diagnostics;
-using System.Text.Json;
 
 namespace SnykTask
 {

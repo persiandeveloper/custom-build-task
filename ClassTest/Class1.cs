@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 
 namespace ClassTest
 {
@@ -7,7 +6,7 @@ namespace ClassTest
     {
         public void A()
         {
-            var obj = JsonConvert.SerializeObject(new { X = 2 });
+            
         }
     }
 }

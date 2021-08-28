@@ -1,0 +1,15 @@
+<Project xlmns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TempFolder>$([System.IO.Path]::GetTempPath())$([System.Guid]::NewGuid())</TempFolder>
+  </PropertyGroup>
+
+  <Target Name="CopyTaskDLL" AfterTargets="CopyFilesToOutputDirectory">
+    <Copy SourceFiles="$(OutDir)SnykTask.DLL" DestinationFolder="$(TempFolder)"/>
+  </Target>
+
+  <UsingTask TaskFactory="TaskHostFactory" Architecture="x64" TaskName="SnykTaskFile" AssemblyFile="$(TempFolder)\SnykTask.dll"/>
+
+  <Target Name="SnykTask" DependsOnTargets="CopyFilesToOutputDirectory"  AfterTargets="CopyFilesToOutputDirectory">
+    <SnykTaskFile />
+  </Target >
+</Project>
